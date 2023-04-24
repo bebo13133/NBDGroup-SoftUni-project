@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="shortcut icon" href="./mediaFolder/..." type="image/x-icon">
+	<!-- <link rel="shortcut icon" href="./mediaFolder/logo.jpg" type="image/x-icon"> -->
+</head>
+<body>
+    <header>
+        <section class="navigation">
+            <p id="logo">NBD<span><i class="fa-solid fa-fire-flame-curved" style="color: #c81933;"></i>Group</span></p>
+        
+            <nav id="navbar" class="scrolled">
+                <div class="menu-bar">
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">About us</a>
+           <div class="sub-menu-1">
+                    <ul>
+                        
+                        <li><a href="/about-borislav/BorislavIliev.html">Borislav Iliev</a></li>
+                        <li><a href="#">Deyan Slavov</a></li>
+                        <li><a href="#">Nikola Mihaylov</a></li>
+
+
+                    </ul>
+
+
+
+                </div>
+                
+                <!-- /about-borislav/aboutBorislav.html -->
+                
+                </li>
+            </ul>
+        </div>
+            <script>
+				const menuElements = document.querySelectorAll("ul li a");
+				menuElements.forEach((elements) => {
+					elements.addEventListener("click", () => {
+						document.querySelector("li a.active").classList.remove("active");
+						elements.classList.add("active");
+					});
+				});
+			</script>
+
+        </nav>
+        </section>
+        <section class="img-header">
+            
+            <h1>Welcome to NBD group!</h1>
+        </br>
+            <h2><span>The technical world is vast</br>
+                and we will help you become part of it!</span> </h2>
+                <div><button id="letsGo">Lets'go!</button></div>
+        </section>
+
+    </header>
+    <main></main>
+    <footer class="footer">
+		<p>All rights reserved! &copy; 2023</p>
+		<h3>Creators:</h3>
+		<div class="social-networks">
+			<ul>
+				<span>Bobi</span>
+				<li><a href="https://github.com/bebo13133" target="_blank"><i class="fa-brands fa-github" style="color: #b20a0a;"></i></a></li>
+				<span>Deyan</span>
+
+				<li><a href="https://github.com/didoslavov" target="_blank"><i class="fa-brands fa-github" style="color: #b20a0a;"></i></a>
+				</li>
+				<span>Nikola</span>
+				<li><a href="https://github.com/nikolamihailov" target="_blank"><i class="fa-brands fa-github" style="color: #b20a0a;"></i></a>
+				</li>
+
+			</ul>
+		</div>
+
+	</footer>
+</body>
+</html>

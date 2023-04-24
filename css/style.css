@@ -1,0 +1,290 @@
+/*  */
+
+body {
+ box-sizing: border-box; 
+	font-family: rockwell;
+	font-size: 16px;
+	max-width: 1300px;
+	margin: 0 auto;
+	color: rgb(14, 12, 12);
+	min-height: 100vh;
+}
+
+.navigation {
+	padding: 0 ;
+	width: 100%;
+	background: linear-gradient(to top, black, gray);
+}
+
+.navigation p {
+	color: #c0c0c0;
+	margin: 0;
+	padding: 0 5px;
+	display: inline-block;
+	font-size: 25px;
+	font-weight: bold;
+	width: 800px;
+	text-shadow: 20px 30px 60px #7c0f0f;
+}
+
+i {
+	font-size: 30px;
+	color: white;
+}
+
+nav {
+	display: inline-block;
+	padding: 0;
+	position: sticky;
+	top: 0;
+	/* display: flex; */
+	align-items: center;
+	justify-content: space-around;
+	height: 70px;
+	padding-bottom: 5px;
+	transition: 0.5s linear;
+}
+
+nav ul {
+	padding: 15px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 30px;
+	/* width: 60vh; */
+	display: inline-block;
+	justify-content: space-between;
+	text-align: center;
+	box-shadow: 10px 20px 80px #0f31ab,
+		-20px -20px 60px #c70f0f;
+font-size: 10px;
+}
+
+nav li {
+	display: inline-block;
+	list-style: none;
+
+	margin: 0 15px;
+	position: relative;
+	cursor: pointer;
+	text-align: center;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: bold;
+	padding-left: 5px;
+}
+
+nav ul li a:hover {
+	color: #b11010;
+	transition: all 0.3s linear;
+	padding-inline-start: 3px;
+}
+
+li a.active::after {
+	position: absolute;
+	content: "";
+	height: 4px;
+	width: 100%;
+	background-color: #c81933;
+	left: 3px;
+	bottom: -3px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	animation: appear 0.3s linear;
+}
+
+@keyframes appear {
+	from {
+		width: 0%;
+	}
+
+	to {
+		width: 100%;
+	}
+}
+.sub-menu-1 {
+display: none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+	display: block;
+	position: absolute;
+	/* background: #797474; */
+	margin-top: 3px;
+	margin-left: -60px;
+	
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+	display: block;
+	margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+	width: 130px;
+	padding: 8px;
+	/* border-bottom: 1px dotted white; */
+	background: transparent;
+border-radius: 0;
+text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+	border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+color: #b11010;
+background: #797474;
+border:1px solid #797474;
+border-radius: 6px;
+/* padding: 10px; */
+}
+/* ----------------------------- img-header */
+
+.img-header {
+	margin: 0 auto;
+	background: url(/media/planets.png);
+	background-size: cover;
+	height: 530px;
+	padding: 0;
+
+}
+
+.img-header h1 {
+	margin: 0;
+	color: inherit;
+	font-size: 40px;
+	width: 60%;
+	letter-spacing: 5px;
+	text-align: center;
+	padding-top: 150px;
+
+
+	font-weight: 700;
+	word-spacing: 1px;
+	text-transform: uppercase;
+	background: linear-gradient(327deg, #ec0505, #ffffff, #07a0ec);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-repeat: no-repeat;
+	background-size: 75%;
+	animation: first 13s linear 1;
+	position: relative;
+	padding-inline-end: 307px
+}
+
+.img-header h2 {
+	font-style: italic;
+	color: inherit;
+	width: 60%;
+	letter-spacing: 5px;
+	text-align: center;
+	padding-top: 40px;
+
+
+	font-weight: 700;
+	word-spacing: 1px;
+	text-transform: uppercase;
+	background: linear-gradient(271deg, #ec0505, #ffffff, #07a0ec);
+	;
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-repeat: no-repeat;
+	background-size: 80%;
+	animation: second 13s linear 1;
+	position: relative;
+	padding-inline-end: 310px
+}
+
+
+@keyframes first {
+	0% {
+		background-position-x: -400%;
+	}
+
+	100% {
+		background-position-x: 300%;
+	}
+}
+
+@keyframes second {
+	0% {
+		background-position-x: -1000%;
+	}
+
+	100% {
+		background-position-x: 350%;
+	}
+}
+
+#letsGo {
+	padding-left: 5px;
+	margin-left: 290px;
+	margin-top: 70px;
+	font-size: 20px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	border: 2px solid #c0c0c0;
+	font-weight: bold;
+
+	border-radius: 20px;
+	padding: 11px 15px;
+	background: linear-gradient(to left, #ffffff, #07a0ec);
+
+	color: #797474;
+	
+
+}
+
+/* -------------------------------------------------- footer */
+.footer {
+	bottom: 0;
+	/* width: 100vw; */
+	text-align: center;
+	clear: both;
+	background-color: black;
+	color: white;
+	padding: 10px;
+
+}
+
+.footer .social-networks {
+	width: 100%;
+}
+
+.footer .social-networks ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer .social-networks ul li {
+	margin: 0px 20px;
+}
+
+footer .social-networks ul li a {
+	text-decoration: none;
+	color: white;
+	font-size: 35px;
+	transition: 0.5s ease;
+	padding: 0;
+
+}
+
+footer .social-networks ul li a i {
+	transition: 0.5 ease;
+	padding: 0;
+
+}
+
+footer .social-networks ul li a:hover {
+	color: red;
+
+}
+
+footer .social-networks ul li i:hover {
+	scale: 1.15;
+}
