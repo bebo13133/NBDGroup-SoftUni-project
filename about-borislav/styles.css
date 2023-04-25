@@ -325,6 +325,9 @@ body>div.about-person>div>div>div.col-2-about>div.education-content>ul>li:nth-ch
     transition: height 0.6s;
 
 }
+ #services > div > div p {
+    color: var(--tertiary-color);
+} 
 
 .layer-line h3 {
     font-weight: 500;

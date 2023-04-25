@@ -10,13 +10,15 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="shortcut icon" href="./mediaFolder/..." type="image/x-icon">
+    <script type="text/javascript" src="/javascript.js"></script>
 	<!-- <link rel="shortcut icon" href="./mediaFolder/logo.jpg" type="image/x-icon"> -->
 </head>
 <body>
     <header>
+        
         <section class="navigation">
             <p id="logo">NBD<span><i class="fa-solid fa-fire-flame-curved" style="color: #c81933;"></i>Group</span></p>
-        
+            
             <nav id="navbar" class="scrolled">
                 <div class="menu-bar">
             <ul>
@@ -43,7 +45,7 @@
                 </li>
             </ul>
         </div>
-            <script>
+            <!-- <script>
 				const menuElements = document.querySelectorAll("ul li a");
 				menuElements.forEach((elements) => {
 					elements.addEventListener("click", () => {
@@ -51,12 +53,22 @@
 						elements.classList.add("active");
 					});
 				});
-			</script>
+			</script> -->
 
         </nav>
         </section>
         <section class="img-header">
-            
+          <!-- mobile menu -->
+            <div class="menu-box" id="menuBox">
+                <img src="./media/menu.png" id="menuIcon" alt="iconMenu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+ <script type="text/javascript" src="/javascript.js"></script>
+            </div>
             <h1>Welcome to NBD group!</h1>
         </br>
             <h2><span>The technical world is vast</br>
