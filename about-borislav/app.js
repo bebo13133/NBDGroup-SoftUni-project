@@ -21,15 +21,12 @@ function openMenu() {
 
 function closeMenu() {
     let menuSide = document.getElementById("burgerMenu")
-    menuSide.style.right = "-220px"
+    menuSide.style.right = "-318px"
 
 }
 
 
-let loader = document.getElementById('preloader')
-window.addEventListener("load", function () {
-    loader.style.display = "none"
-})
+
 var iconMode = document.getElementById("sunIcon");
 var logo = document.getElementById('logo-dark')
 iconMode.onclick = function(){

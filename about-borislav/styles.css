@@ -15,14 +15,14 @@
     --secondary-color: #080808;
     --tertiary-color: #080808;
 }
-#preloader{
+/* #preloader{
     background:#000 url(/about-borislav/images/Spin-1s-200px.gif) no-repeat center center;
     height: 100vh;
     width: 100%;
     
     position: fixed;
     z-index: 100;
-}
+} */
 html{
     scroll-behavior: smooth;
 }
@@ -518,12 +518,29 @@ nav .fa-solid {
     #header {
         background-image: url();
     }
-
+    #sunIcon{
+        position: absolute;
+        width: 35px;
+        top: 55px;
+        cursor: pointer;
+        right: 11px;
+        
+        }
+.container{
+    padding: 10px 0;
+}
+.fa-bars:before, .fa-navicon:before {
+    right:65px;
+    position: absolute;
+}
     .info-person {
         margin-top: 70%;
         font-size: 16px;
+        margin-left: 20px;
     }
-
+    .logo{
+        margin-left: 40px;
+    }
     .info-person h1 {
         font-size: 30px;
     }
@@ -545,8 +562,9 @@ nav .fa-solid {
         border:1px solid var(--primary-color);
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
-        right: -220px;
-        width: 220px;
+        margin-right: 0;
+        right: 0;
+        width: 268px;
         height: 100vh;
         padding-top: 40px;
         z-index: 2;
