@@ -563,13 +563,14 @@ nav .fa-solid {
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
         margin-right: 0;
-        right: 0;
-        width: 268px;
+        right: -220px;
+        width: 220px;
         height: 100vh;
         padding-top: 40px;
         z-index: 2;
         transition: right 1s;
     } 
+    
     nav ul li {
         display: block;
         margin: 25px;

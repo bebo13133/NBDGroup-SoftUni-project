@@ -178,6 +178,7 @@ li a.active::after {
 	margin: 0 auto;
 	background: url(/media/pp1.jpeg);
 	background-size: cover;
+	background-position: center;
 	height: 530px;
 	padding: 0;
 
@@ -455,7 +456,7 @@ footer .social-networks ul li i:hover {
 	}
 
 	.menu-box {
-		display: inline;
+		/* display: inline; */
 		width: 0;
 		height: 0;
 		background: rgba(68, 70, 87, 0.78);
@@ -470,6 +471,7 @@ footer .social-networks ul li i:hover {
 		border-top-right-radius: 60%;
 		z-index: 100;
 		transition: width 0.5s, height 0.5s, border-bottom-left-radius 0.5s;
+		text-decoration: none;
 	}
 
 	.menu-box.openMenu {
@@ -533,5 +535,50 @@ footer .social-networks ul li i:hover {
 		opacity: 1;
 		box-shadow: -2px 2px 0 red;
 	}
+
+
+
+
+
+
+
+	
+	.menu-box ul li:hover .sub-menu-1 {
+		display: block;
+		position: absolute;
+		/* background: #797474; */
+		margin-top: 2px;
+		margin-left: -60px;
+	
+	}
+	
+	.menu-box ul li:hover .sub-menu-1 ul {
+		display: block;
+		margin: 5px;
+	}
+	
+	.menu-box ul li:hover .sub-menu-1 ul li {
+		width: 140px;
+		padding: 10px;
+		border-bottom: 1px dotted white;
+		background: transparent;
+		border-radius: 0;
+		text-align: center;
+	}
+	
+	.menu-box ul li:hover .sub-menu-1 ul li:last-child {
+		border-bottom: none;
+	}
+	
+	.menu-box ul li:hover .sub-menu-1 ul li a:hover {
+		color: #b11010;
+		background: #797474;
+		border: 1px solid #797474;
+		border-radius: 6px;
+		/* padding: 10px; */
+	}
+	
+
+
 
 }

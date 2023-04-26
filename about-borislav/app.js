@@ -13,15 +13,15 @@ function openTab(tabname) {
     document.getElementById(tabname).classList.add("active-content")
 };
 
-function openMenu() {
-    let menuSide = document.getElementById("burgerMenu")
-    menuSide.style.right = "0"
-
-}
-
 function closeMenu() {
     let menuSide = document.getElementById("burgerMenu")
     menuSide.style.right = "-318px"
+
+}
+
+function openMenu() {
+    let menuSide = document.getElementById("burgerMenu")
+    menuSide.style.right = "0"
 
 }
 
