@@ -390,7 +390,7 @@ footer .social-networks ul li i:hover {
 		z-index: 6;
 		/* width: 100%; */
 		width: auto;
-
+		top: 150px;
 		text-align: center;
 		/* padding: 86px; */
 		letter-spacing: 2px;
@@ -411,7 +411,7 @@ footer .social-networks ul li i:hover {
 	.img-header h2 {
 		/* display: block; */
 		left: 5px;
-		bottom: 280px;
+		bottom: 200px;
 		margin: 0;
 		font-size: 18px;
 		padding-right: 2px;
@@ -533,7 +533,10 @@ footer .social-networks ul li i:hover {
 		opacity: 1;
 		box-shadow: -2px 2px 0 red;
 	}
-
+	#menuBox > ul >li{
+		padding-top: 1px;
+		padding-bottom: 20px;
+	}
 	/*---------------- drop-down---------------- */
 	.mobile-links{
 		position:fixed;
@@ -545,7 +548,7 @@ footer .social-networks ul li i:hover {
 		transform: translateY(-6px);
 	}
 	#menuBox > ul > li.nav-links.dropdown > a{
-		display: flex;
+		display: block;
 		align-items: center;
 		justify-content: space-between;
 	}
@@ -569,23 +572,31 @@ footer .social-networks ul li i:hover {
 		transition: transform 1s;
 	}
 	.drop-menu{
-		margin: 0.3rem 0 0 0.1rem;
-		  display: none;  
-		 transition: 2s;
+		margin: 2rem 0rem 0rem 0rem;
+		  display: block;  
+		 transition: 0.5s;
+		 scale: 2;
+		 
+		
 		opacity: 0;
 	}
-	.dropdown{
-		transition:opacity 2s;	
+	#menuBox > ul > li.nav-links.dropdown > ul > li> a{
+		font-size: 22px;
 	}
+
 	.dropdown:hover > .drop-menu{
-		display: block;
 		opacity: 1; 
 		
-		transition-delay: 1.5s;
+		transform: rotate(360deg) scale(0.5) translateY(20px);
+		transition: transform 2s; 
+	
 	}
-	.dropdown:hover .dropdown_icon{
+
+	/* .dropdown:hover > .drop-menu::after{
+		opacity: 1; 
 		transform: rotate(180deg);
-	}
+
+	} */
 /* -------------------------------------------------------- */
 	
 
