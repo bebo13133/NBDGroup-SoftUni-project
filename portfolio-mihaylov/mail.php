@@ -3,7 +3,7 @@
 $name = $_POST['Name'];
 $email= $_POST['email'];
 $message= $_POST['Messages'];
-$to = "bebodesi@ruso.superhosting.bg";
+$to = "nikolamihaylov@ruso.superhosting.bg";
 $subject = "Mail From website";
 $txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n Message =" . $message;
 $headers = "From: noreply@bebodesigns.eu" . "\r\n" .

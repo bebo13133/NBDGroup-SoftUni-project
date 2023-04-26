@@ -133,12 +133,13 @@ li a.active::after {
 }
 
 .sub-menu-1 {
-	display: none;
-	z-index: 99;
+	display: none;  
+
 }
 
 .menu-bar ul li:hover .sub-menu-1 {
-	display: block;
+	display: block;  
+
 	position: absolute;
 	/* background: #797474; */
 	margin-top: 2px;
@@ -147,14 +148,15 @@ li a.active::after {
 }
 
 .menu-bar ul li:hover .sub-menu-1 ul {
+	
 	display: block;
 	margin: 5px;
 }
 
 .menu-bar ul li:hover .sub-menu-1 ul li {
 	width: 140px;
-	padding: 10px;
-	border-bottom: 1px dotted white;
+	padding: 5px;
+	/* border-bottom: 1px dotted white; */
 	background: transparent;
 	border-radius: 0;
 	text-align: center;
@@ -194,7 +196,7 @@ li a.active::after {
 	text-align: left;
 	left: 0;
 	/* padding-top: 150px; */
-	top: 120px;
+	top: 230px;
 	word-spacing: 1px;
 	text-transform: uppercase;
 	background: linear-gradient(327deg, #ec0505, #ffffff, #07a0ec);
@@ -233,7 +235,7 @@ li a.active::after {
 	text-align: center;
 	/* padding-top: 40px; */
 	/* margin-top: 215px; */
-	bottom: 148px;
+	bottom: 128px;
 
 	font-weight: 700;
 	word-spacing: 1px;
@@ -245,7 +247,7 @@ li a.active::after {
 	-webkit-text-fill-color: transparent;
 	background-repeat: no-repeat;
 	background-size: 80%;
-	animation: second 10s linear 1;
+	animation: second 13s linear 1;
 	position: absolute;
 	padding-inline-end: 310px
 }
