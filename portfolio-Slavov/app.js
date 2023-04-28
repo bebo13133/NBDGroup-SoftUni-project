@@ -27,17 +27,16 @@ function closeMenu() {
 
 
 
-
 var iconMode = document.getElementById("sunIcon");
 var logo = document.getElementById('logo-dark')
-iconMode.onclick = () => {
-    document.body.classList.toggle("light-mode", null);
-    if (document.body.classList.contains("light-mode")) {
-        sunIcon.src = "/about-borislav/images/moon-6689.png"
-        logo.src = "/about-borislav/images/logo-light.png"
-    } else {
+iconMode.onclick =  ()=>{
+    document.body.classList.toggle("light-mode");
+    if(document.body.classList.contains("light-mode")) {
+         sunIcon.src = "/about-borislav/images/moon-6689.png"
+          logo.src = "/about-borislav/images/logo-light.png"
+    }else{ 
         sunIcon.src = "/about-borislav/images/sun-8728.png"
-        logo.src = "./images/logo-dark.png"
+     logo.src = "./images/logo-dark.png"
     }
 }
 
