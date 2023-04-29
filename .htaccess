@@ -1,0 +1,13 @@
+<filesMatch ".(css|jpg|jpeg|png|gif|js|ico)$">
+Header set Cache-Control "max-age=2628000, public"
+</filesMatch>
+
+<IfModule mod_expires.c>
+ ExpiresActive On
+ ExpiresByType image/gif "access plus 1 month"
+ ExpiresByType image/jpeg "access plus 1 month"
+ ExpiresByType image/png "access plus 1 month"
+ ExpiresByType text/css "access plus 1 week"
+ ExpiresByType text/javascript "access plus 1 week"
+ ExpiresByType application/javascript "access plus 1 week"
+</IfModule>
