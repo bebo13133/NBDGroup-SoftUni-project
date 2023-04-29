@@ -7,10 +7,10 @@ icon.onclick = ()=>{
    : icon.src="./media/menu.png";
       
 }
-// const menuElements = document.querySelectorAll("ul li a");
-// menuElements.forEach((elements) => {
-//     elements.addEventListener("click", () => {
-//         document.querySelector("li a.active").classList.remove("active");
-//         elements.classList.add("active");
-//     });
-// });
+var menuElements = document.querySelectorAll("ul li a");
+menuElements.forEach((elements) => {
+    elements.addEventListener("click", () => {
+        document.querySelector("li a.active").classList.remove("active");
+        elements.classList.add("active");
+    });
+});
