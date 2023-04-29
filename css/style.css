@@ -486,7 +486,7 @@ footer .social-networks ul li i:hover {
 
 	.menu-box ul li {
 		list-style: none;
-		margin: 20px;
+		margin: 10px;
 		text-align: center;
 		z-index: 100;
 		opacity: 0;
@@ -546,7 +546,7 @@ footer .social-networks ul li i:hover {
 		justify-content: space-between;
 	}
 	.dropdown-item .nav-link{
-		margin: 1.5rem 0 ;
+		margin: 0.5rem 0 ;
 		color: #f79533;
 		font-size: 18px;
 		transition: trnasform 0.1s;
@@ -566,7 +566,7 @@ footer .social-networks ul li i:hover {
 	}
 	.drop-menu{
 		margin: 2rem 0rem 0rem 0rem;
-		  display: block;  
+		  display: none;  
 		 transition: 0.5s;
 		 scale: 2;
 		 

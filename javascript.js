@@ -1,11 +1,18 @@
 var menuBox = document.getElementById('menuBox')
 var icon = document.getElementById("menuIcon")
 
-icon.onclick = ()=>{
+icon.onclick = () => {
+    let x = document.querySelector('.drop-menu')
     menuBox.classList.toggle('openMenu');
-   (menuBox.classList.contains ("openMenu")) ? icon.src="./media/close.png"
-   : icon.src="./media/menu.png";
-      
+   if (menuBox.classList.contains("openMenu")) {
+    x.style.display = "block"
+    icon.src = "./media/close.png"
+   } else{ 
+    icon.src = "./media/menu.png";
+    x.style.display = "none"
+   }
+        
+
 }
 var menuElements = document.querySelectorAll("ul li a");
 menuElements.forEach((elements) => {
@@ -14,3 +21,16 @@ menuElements.forEach((elements) => {
         elements.classList.add("active");
     });
 });
+// var icon = document.getElementById("menuIcon")
+
+
+// icon.forEach((elements) => {
+//     elements.addEventListener("click",()=>{
+//         let menu = document.getElementsByClassName("drop-menu")
+//         if(menu.style.display === "none"){
+//             menu.style.display = "block"
+//         }else{
+//             menu.style.display="none"
+//         }
+//     })
+// })
