@@ -1,17 +1,20 @@
-var menuBox = document.getElementById('menuBox')
-var icon = document.getElementById("menuIcon")
 
-icon.onclick = () => {
-    let x = document.querySelector('.drop-menu')
-    menuBox.classList.toggle('openMenu');
-   if (menuBox.classList.contains("openMenu")) {
-    x.style.display = "block"
-    icon.src = "./media/close.png"
-   } else{ 
-    icon.src = "./media/menu.png";
-    x.style.display = "none"
-   }
-        
+window.onload = function () {
+    var menuBox = document.getElementById('menuBox')
+    var icon = document.getElementById("menuIcon")
+
+    icon.onclick = () => {
+        let x = document.querySelector('.drop-menu')
+        menuBox.classList.toggle('openMenu');
+        if (menuBox.classList.contains("openMenu")) {
+            x.style.display = "block"
+            icon.src = "./media/close.png"
+        } else {
+            icon.src = "./media/menu.png";
+            x.style.display = "none"
+        }
+
+    }
 
 }
 var menuElements = document.querySelectorAll("ul li a");
@@ -21,16 +24,31 @@ menuElements.forEach((elements) => {
         elements.classList.add("active");
     });
 });
-// var icon = document.getElementById("menuIcon")
+// /============== COOKIESE==========================/
 
+setCookie = (userName, userValue, expDays) => {
+    let date = new Date();
+    date.setTime(date.getTime() + (expDays * 24 * 60 * 60 * 1000));
+    const expires = "expires=" + date.toUTCString();
+    document.cookie = userName + "=" + userValue + ";" + expires + "; path=/";
+}
 
-// icon.forEach((elements) => {
-//     elements.addEventListener("click",()=>{
-//         let menu = document.getElementsByClassName("drop-menu")
-//         if(menu.style.display === "none"){
-//             menu.style.display = "block"
-//         }else{
-//             menu.style.display="none"
-//         }
-//     })
-// })
+getCookie = (userName) => {
+    let name = userName + "=";
+    let usersInfo = decodeURIComponent(document.cookie);
+    let userArr = usersInfo.split("; ");
+    let value;
+    userArr.forEach(val => { if (val.indexOf(name) === 0) value = val.substring(name.length) })
+    return value;
+}
+
+document.querySelector("#cookies_btn").addEventListener('click', () => {
+    document.querySelector("#cookies").style.display = 'none';
+    setCookie("cookie", true, 15);
+
+})
+cMessage = () => {
+    if (!getCookie("cookie")) document.querySelector("#cookies").style.display = "block"
+
+};
+window.addEventListener("load", cMessage);

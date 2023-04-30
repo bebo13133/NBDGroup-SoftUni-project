@@ -1,0 +1,239 @@
+@media only screen and (max-width: 768px) {
+
+	.navigation p {
+		width: 100%;
+	}
+
+	.img-header {
+
+		width: 100%;
+		height: 100vh;
+		background: url(/media/HD-wallpaper-machine-high-tech\ copy.webp);
+	}
+
+	nav {
+		display: none;
+	}
+
+	.menu-box {
+		display: none;
+	}
+
+	.img-header h1 {
+		padding-left: 0;
+		font-size: 28px;
+		background-size: 86%;
+		z-index: 6;
+		
+		width: auto;
+		top: 150px;
+		text-align: center;
+	
+		letter-spacing: 2px;
+		left: 0;
+	}
+
+	#letsGo {
+		display: block;
+		width: 40%;
+		left: 140px;
+		font-size: 18px;
+		margin-top: 70px;
+		padding: 7px 15px;
+		justify-content: center;
+		z-index: 4;
+	}
+
+	.img-header h2 {
+	
+		left: 5px;
+		bottom: 200px;
+		margin: 0;
+		font-size: 18px;
+		padding-right: 2px;
+		text-align: left;
+	
+		word-spacing: 1px;
+		background-size: 90%;
+	}
+
+	body>footer>p {
+		font-size: 10px;
+	}
+
+	body>footer>h3 {
+		font-size: 10px;
+	}
+
+	.footer {
+		width: 100%;
+		display: inline-block;
+	}
+
+	.social-networks ul span {
+		font-size: 10px;
+	}
+
+	.social-networks ul li i {
+		font-size: 16px;
+		margin-bottom: 20px;
+		padding-right: 40px;
+	}
+
+	#menuIcon {
+		display: inline;
+		width: 50px;
+		position: fixed;
+		top: 50px;
+		right: 40px;
+		border-radius: 50%;
+		cursor: pointer;
+		z-index: 100;
+	}
+
+	.menu-box {
+		
+		width: 0;
+		height: 0;
+		background: rgba(68, 70, 87, 0.78);
+		position: fixed;
+		left: 0;
+		right: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		overflow: hidden;
+		border-bottom-right-radius: 7px;
+		border-top-right-radius: 40%;
+		z-index: 100;
+		transition: width 0.5s, height 0.5s, border-bottom-left-radius 0.5s;
+		text-decoration: none;
+	}
+
+	.menu-box.openMenu {
+		border-bottom-left-radius: 0;
+		width: 60%;
+		height: 75vh;
+	}
+
+	.menu-box.openMenu ul li {
+		opacity: 1;
+		transform: translateY(0);
+		transition: transform 1s, opacity 1s;
+		transition-delay: 0.5s;
+
+	}
+
+	.menu-box ul li {
+		list-style: none;
+		margin: 10px;
+		text-align: center;
+		z-index: 100;
+		opacity: 0;
+	transform: translateY(30px);
+	}
+	.menu-box ul li a {
+		text-decoration: none;
+		display:block;
+		color: #fff;
+		font-size: 20px;
+		position: relative;
+		font-weight: 600;
+		text-shadow: 0 0 0 red;
+		padding: 0;
+		cursor: pointer;
+		z-index: 99;
+		transition: text-shadow 0.6s, transform 0.5s;
+		top: 5px;
+	}
+	.menu-box ul li a::after {
+		content: '';
+		width: 5px;
+		height: 5px;
+		border-radius: 50%;
+		background: #fff;
+		position:absolute;
+		bottom: 5px;
+		left: 100px;
+		opacity: 0;
+		box-shadow: 0px 0px 0 red;
+		transition: box-shadow 0.5s;
+	}
+
+	.menu-box ul li a:hover::after {
+		opacity: 1;
+		box-shadow: -2px 2px 0 red;
+	}
+	#menuBox > ul >li{
+		padding-top: 1px;
+		padding-bottom: 20px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/*---------------- drop-down---------------- */
+	.mobile-links{
+		position:fixed;
+		top: 100px;
+		left:3px
+	}
+	.menu-box ul li a:hover {
+		text-shadow: -2px 2px 0 red;
+		transform: translateY(-6px);
+	}
+	#menuBox > ul > li.nav-links.dropdown > a{
+		display: block;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.dropdown-item .nav-link{
+		margin: 0.5rem 0 ;
+		color: #f79533;
+		font-size: 18px;
+		transition: trnasform 0.1s;
+		background: transparent;
+		text-shadow: #000;
+		letter-spacing: 0.3px;
+	}
+
+	.dropdown_icon{
+		font-size: 16px;
+		transition: 0.5s;
+		margin-left: 25px;
+		transition: transform 1s;
+	}
+	.drop-menu{
+		margin: 2rem 0rem 0rem 0rem;
+		  display: none;  
+		 transition: 0.5s;
+		 scale: 2;
+		 
+		
+		opacity: 0;
+	}
+	#menuBox > ul > li.nav-links.dropdown > ul > li> a{
+		font-size: 22px;
+	}
+
+	.dropdown:hover > .drop-menu{
+		opacity: 1; 
+		
+		transform: rotate(360deg) scale(0.5) translateY(20px);
+		transition: transform 2s; 
+	
+	}
+}

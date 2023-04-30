@@ -21,7 +21,7 @@
 
 
 
-    <link rel="stylesheet" type="text/css" href="./css/style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="/style.css" media="all">
     <link rel="shortcut icon" href="./mediaFolder/..." type="image/x-icon">
     <script type="text/javascript" src="javascript.js" defer></script>
 	<link rel="shortcut icon" href="./mediaFolder/logo.jpg" type="image/x-icon">
@@ -61,24 +61,18 @@
                 </li>
             </ul>
         </div>
-            <!-- <script>
-				const menuElements = document.querySelectorAll("ul li a");
-				menuElements.forEach((elements) => {
-					elements.addEventListener("click", () => {
-						document.querySelector("li a.active").classList.remove("active");
-						elements.classList.add("active");
-					});
-				});
-			</script> -->
 
         </nav>
         </section>
         <section class="img-header">
-          <!-- mobile menu -->
-          <script type="text/javascript" src="javascript.js" async defer></script>
+
+          <!--==================== MOBILE-MENU ========================-->
+
+          <link rel="stylesheet" media="screen and (max-width: 768px)" href="style-mobile.css"/>
+          <!-- <script type="text/javascript" src="javascript.js" async defer></script> -->
                <img src="./media/menu.png" onclick="myFunction()" id="menuIcon" alt="iconMenu">
             <div class="menu-box" id="menuBox">
-           
+                <script type="text/javascript" src="javascript.js" async defer></script>
                 <ul class="mobile-links">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Projects</a></li>
@@ -86,6 +80,7 @@
                     <li class="nav-links dropdown"><a href="#" class="nav-linkss dropdown-link">About us<i class="fa-solid fa-chevron-down dropdown_icon"></i></a>
             
                             <ul class="drop-menu">
+                              
                                 <li class="dropdown-item"><a href="/portfolio-asya/asya.html" class="nav-link">Asya Georgieva</a></li>
                                 <li class="dropdown-item"><a href="./about-borislav/BorislavIliev.html" class="nav-link">Borislav Iliev</a></li>
                                 <li class="dropdown-item"><a href="/portfolio-slavov/slavov.html" class="nav-link">Deyan Slavov</a></li>
@@ -103,6 +98,9 @@
                 </ul>
  <script type="text/javascript" src="/javascript.js" defer></script>
             </div>
+          <!-- ============================================================= -->
+
+
             <h1>Welcome to NBD group!</h1>
         </br>
             <h2>The technical world is vast</br>
@@ -130,5 +128,22 @@
 
 	</footer>
     <script type="text/javascript" src="javascript.js" defer></script>
+
+
+<!-- ============ COOKIES ================================================= -->
+<div id="cookies">
+    
+    <div class="container">
+        <div class="subcontainer">
+            <div class="cookies">
+                <p>Welcome to NBDA Group! We use cookies to enhance your browsing experience, serve personalized ads or content, 
+                    and analyze our traffic. By clicking "Accept All", you consent to our use of cookies. <a href="#" alt="cookies_policy">Cookies Policy.</a></p>
+                    <button id="cookies_btn">Accept All</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 </body>
 </html>
