@@ -39,5 +39,3 @@ iconMode.onclick =  ()=>{
      logo.src = "./images/logo-dark.png"
     }
 }
-
-

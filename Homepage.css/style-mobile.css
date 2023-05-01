@@ -32,45 +32,6 @@
 		letter-spacing: 2px;
 		left: 0;
 	}
-/* ================ COOKIES===================== */
-
-/* #cookies{
-	display: inline-block;
-	position: fixed;
-	z-index: 101;
-	bottom: 0;
-	bottom: -1%;
-
-
-	transition: bottom 2s ease;
-	min-height: 50px;
-}
-
-/* #cookies_btn.show{
-	bottom: 10px;
-} */
-/* #cookies{z-index: 100} */
-#cookies .container{
-	width: 100%;
-}
-.cookies{
-	display: inline-block;
-	justify-content: center;
-	width: 100%;
-}
-#cookies .container .subcontainer{
-	width: 90%;
-	margin:10px;
-	text-align: center;
-	font-size: 12px;
-}
-
-#cookies_btn{
-	font-weight: 500;
-	font-size: 10px;
-} 
-
-
 
 	#letsGo {
 		display: block;
@@ -80,7 +41,7 @@
 		margin-top: 70px;
 		padding: 7px 15px;
 		justify-content: center;
-		/* z-index: 4; */
+		z-index: 4;
 	}
 
 	.img-header h2 {
@@ -106,7 +67,7 @@
 
 	.footer {
 		width: 100%;
-		display: block;
+		display: inline-block;
 	}
 
 	.social-networks ul span {

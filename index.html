@@ -14,16 +14,19 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  
     <link rel="stylesheet"  as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'"/>
 
 
 
-    <link rel="stylesheet" type="text/css" href="/style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="/style.css"  media="all">
+    <style>@import url("cookie.css");</style>
+    <style>@import url("/style-mobile.css");</style>
     <link rel="shortcut icon" href="./mediaFolder/..." type="image/x-icon">
-    <script type="text/javascript" src="javascript.js" defer></script>
+    <script type="text/javascript" src="javascript.js" async defer></script>
+    <script type="text/javascript" src="cookie_app.js" async  defer></script>
 	<link rel="shortcut icon" href="./mediaFolder/logo.jpg" type="image/x-icon">
 </head>
 <body>
@@ -32,7 +35,7 @@
     <header>
         <script type="text/javascript" src="javascript.js" async defer></script>
         <section class="navigation">
-            <p id="logo">NBD<span><i class="fa-solid fa-fire-flame-curved" style="color: #c81933;"></i>Group</span></p>
+            <p id="logo">NBDA<span><i class="fa-solid fa-fire-flame-curved" style="color: #c81933;"></i>Group</span></p>
             
             <nav id="navbar" class="scrolled">
                
@@ -127,16 +130,47 @@
 		</div>
 
 	</footer>
-    <script type="text/javascript" src="javascript.js" defer></script>
+    <script type="text/javascript" src="javascript.js" async defer></script>
 
 
 <!-- ============ COOKIES ================================================= -->
+<!-- <link rel="stylesheet" href="cookie.css"/> -->
 <div id="cookies">
-    <script type="text/javascript" src="/cookie_app.js"  defer></script>
+    <!-- <script >
+    const wrapText = document.querySelector("#cookies")
+        document.querySelector("#cookies_btn")
+         executedCode = () => {
+            if( document.cookie.includes("cookie")) return;
+            wrapText.classList.add("show");
+        
+        };     
+        window.addEventListener("load", executedCode);
+        
+        setCookie = (userName, userValue, expDays) => {
+            let date = new Date();
+            date.setTime(date.getTime() + (expDays * 24 * 60 * 60 * 1000));
+            let expires = "expires=" + date.toUTCString();
+            document.cookie = userName + "=" + userValue + ";" + expires + "; path=/";
+        }
+        getCookie = (userName) => {
+            let nameInfo = userName + "=";
+            let usersInfo = decodeURIComponent(document.cookie);
+            let userArr = usersInfo.split("; ");
+            let value;
+            userArr.forEach(val => { if (val.indexOf(nameInfo) === 0) value = val.substring(name.length) })
+            return value;
+        }
+        document.querySelector("#cookies_btn").addEventListener('click', () => {
+                wrapText.classList.remove("show")
+               
+                setCookie("cookie", true, 15);
+            });
+            </script> -->
     <div class="container">
         <div class="subcontainer">
             <div class="cookies">
-                <p>Welcome to NBDA Group! We use cookies to enhance your browsing experience, serve personalized ads or content, 
+                <p>Welcome to NBDA<span><i class="fa-solid fa-fire-flame-curved" style="color: #c81933;"></i>Group</span>!
+                     We use cookies to enhance your browsing experience, serve personalized ads or content, 
                     and analyze our traffic. By clicking "Accept All", you consent to our use of cookies.  <a href="#" alt="cookies_policy">Cookies Policy.</a></p>
                     <button id="cookies_btn">Accept All</button>
                    

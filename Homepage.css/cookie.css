@@ -1,0 +1,67 @@
+
+#cookies{
+	display: inline-block;
+	width: 100%;
+	position: fixed;
+	color: white;
+	background:  linear-gradient(to bottom, black,rgba(238, 89, 8, 0.803));
+	bottom: -170%;
+	z-index: 1;
+
+	transition: bottom 2s ease;
+	min-height: 50px;
+}
+#cookies.show{
+	bottom: 10px;
+}
+#cookies_btn.show{
+	bottom: 40px;
+}
+#cookies .container{
+	width: 1360px;
+	margin: auto;
+
+}
+#cookies .container .subcontainer{
+	width: 86%;
+	margin:2px;
+	text-align: center;
+	font-size: 12px;
+}
+
+.cookies{
+
+	min-height: 20px;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 0px;
+	
+}
+.subcontainer p{
+	color: #ffefd3;
+}
+.subcontainer a{
+	color: #1bd572;
+	text-decoration: none;
+	font-weight: 700;
+	
+}
+#cookies_btn{
+	color: rgb(202, 1, 1);
+	font-weight: 800;
+	background:  linear-gradient(to top,#96bfa9,rgb(138, 121, 121));
+	
+	border: 2px solid black;
+	padding: 2px 12px;
+	border-radius: 7px;
+	cursor: pointer;
+	font-size: 16px;
+	font-family: inherit;
+	
+	transition: bottom 1s ease;
+}
+#cookies_btn:hover{
+	color: #0f31ab;
+}
