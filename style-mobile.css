@@ -1,11 +1,11 @@
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
 
 	.navigation p {
 		width: 100%;
 	}
 
 	.img-header {
-
+	z-index: 1;
 		width: 100%;
 		height: 100vh;
 		background: url(/media/HD-wallpaper-machine-high-tech\ copy.webp);
@@ -34,22 +34,6 @@
 	}
 /* ================ COOKIES===================== */
 
-/* #cookies{
-	display: inline-block;
-	position: fixed;
-	z-index: 101;
-	bottom: 0;
-	bottom: -1%;
-
-
-	transition: bottom 2s ease;
-	min-height: 50px;
-}
-
-/* #cookies_btn.show{
-	bottom: 10px;
-} */
-/* #cookies{z-index: 100} */
 #cookies .container{
 	width: 100%;
 }
@@ -73,14 +57,15 @@
 
 
 	#letsGo {
+		position: absolute;
 		display: block;
 		width: 40%;
-		left: 140px;
+		left: 130px;
 		font-size: 18px;
-		margin-top: 70px;
+		margin-top: 70px !important;
 		padding: 7px 15px;
 		justify-content: center;
-		/* z-index: 4; */
+	bottom: -80px;
 	}
 
 	.img-header h2 {
@@ -118,6 +103,14 @@
 		margin-bottom: 20px;
 		padding-right: 40px;
 	}
+
+
+
+
+
+
+
+
 
 	#menuIcon {
 		display: inline;
@@ -209,21 +202,6 @@
 		padding-bottom: 20px;
 	}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	/*---------------- drop-down---------------- */
 	.mobile-links{
 		position:fixed;
@@ -276,3 +254,102 @@
 	
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/*---------------- drop-down---------------- */
+	/* .mobile-links{
+		display: none;
+		position:fixed;
+		top: 100px;
+		left:3px
+	}
+	.menu-box ul li a:hover {
+		text-shadow: -2px 2px 0 red;
+		transform: translateY(-6px);
+	}
+	#menuBox > ul > li.nav-links.dropdown > a{
+		display: block;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.dropdown-item .nav-link{
+		margin: 0.5rem 0 ;
+		color: #f79533;
+		font-size: 18px;
+		transition: trnasform 0.1s;
+		background: transparent;
+		text-shadow: #000;
+		letter-spacing: 0.3px;
+	}
+
+	.dropdown_icon{
+		font-size: 16px;
+		transition: 0.5s;
+		margin-left: 25px;
+		transition: transform 1s;
+	}
+	.drop-menu{
+		margin: 2rem 0rem 0rem 0rem;
+		  display: none;  
+		 transition: 0.5s;
+		 scale: 2;
+		 
+		
+		opacity: 0;
+	}
+	#menuBox > ul > li.nav-links.dropdown > ul > li> a{
+		font-size: 22px;
+	}
+
+	.dropdown:hover > .drop-menu{
+		opacity: 1; 
+		
+		transform: rotate(360deg) scale(0.5) translateY(20px);
+		transition: transform 2s; 
+	
+	} */
+
+
+/* =============== slide============== */
+.carousel-item {
+
+	height: 420px;
+}
+.carousel-caption{
+left: 0!important;
+right: 0!important;
+margin: 0 10px 50px 10px;
+}
+.row-service img{
+	margin-bottom: 18px;
+}
+
+
+.service-col {
+	display: block;
+
+    flex-wrap: none;
+    margin: 200px 0;
+
+
+}
+
+
+
+/* ========================================= */
+/* .img-header::before{
+
+} */
