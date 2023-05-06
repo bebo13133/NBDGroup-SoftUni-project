@@ -1,4 +1,39 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+
+/* :root{
+    --light-color: #fff;
+    --light-color-alt: #afb6cd;
+    --primary-background-color: #131417;
+    --secondary-background-color: #252830;
+    --hover-light-color: var(--light-color);
+    --hover-dark-color: var(--primary-background-color);
+    --gradient-color: linear-gradient(
+        115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
+    --transparent-light-color: rgba(255,255,255,.05);
+    --transparent-dark-color: rgba(0,0,0,.75);
+    --font-family: 'Poppins', sans-serif;
+    --font-size-xsm: 1.2rem;
+    --font-size-sm: 1.6rem;
+    --font-size-md: 2.4rem;
+    --font-size-lg: 3rem;
+    --font-size-xl: 4rem;
+    --gap: 2rem;
+    --margin-sm: 2rem;
+    --margin-md: 3rem;
+    --item-min-height-sm: 20rem;
+    --item-min-height-md: 30rem;
+} */
+
+
+
+
+
+
+
+
+
 
 * {
 
@@ -19,7 +54,7 @@ body {
 	margin: 0 auto;
 	color: rgb(14, 12, 12);
 	min-height: 100vh;
-	background-color: rgba(255, 255, 255, 0.6);
+	background-color:  #252830;
 	
 	/* background: linear-gradient(to top, #ffffff, #2fbaff, #f27d00); */
 
@@ -29,6 +64,9 @@ header {
 	display: flexbox;
 	width: 100%;
 
+}
+.lazi-img{
+	filter: blur(10px);
 }
 
 nav {
@@ -67,7 +105,7 @@ nav {
 	display: inline-block;
 	font-size: 15px;
 	font-weight: bold;
-	width: 800px;
+	width: 700px;
 	text-shadow: 20px 30px 60px #7c0f0f;
 }
 
@@ -108,6 +146,12 @@ nav ul li a {
 	font-size: 15px;
 	font-weight: bold;
 	padding-left: 5px;
+}
+#navbar > div > ul > li:nth-child(4) > a{
+	margin-right: 0px;
+}
+#navbar > div > ul > li:nth-child(6) > a{
+	margin-left: -18px;
 }
 
 nav ul li a:hover {
@@ -317,6 +361,58 @@ filter: drop-shadow(0px -7px 1px rgb(251, 142, 0));
 
 }
 
+/* ========================== quick news=================== */
+.wraper-slide{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 70vh;
+}
+.slider{
+	max-width: 1350px;
+	height: 150px;
+	margin:  auto;
+	overflow: hidden;
+	position: relative;
+	width: 60%;
+}
+.slider h3{
+	color: #7c0f0f;
+	text-shadow: 20px 30px 60px #7c0f0f
+}
+.slider .slide-track{
+
+	animation: scroll 30s linear infinite;
+	display: flex;
+	width: calc(250px*10);
+	padding: 10px;
+}
+
+.slider .slide{
+	width: 250px;
+	height: 140px;
+}
+
+.slider .slide img{
+	cursor: pointer;
+	display: flex;
+	width: 90%;
+	height: 100px;
+	border-radius: 10px;
+	border: 2px solid #bbbb;	 
+	padding: 10px;
+}
+.slider .ambitioned-img img{
+	background-color: #000F4F;
+}
+ 
+@keyframes scroll {
+	from{ right: 0;
+		transform: translateX(0);
+	}to{
+		transform: translateX(calc(-250px*5.1));
+	}
+}
 /* ===================== main ++++++++++++++++++++++++++++++++ */
  main {
 	padding: 0;
@@ -478,8 +574,46 @@ color: #797474 !important;
 		background-color: #6900d1;
 	
 	}
-
-
+/* =========================NEWSLETTER=============================== */
+.newLetter{
+	background:url(/media/Alena\ Butusava_orig.webp);
+	padding: 15px;
+	width: 100%;
+text-align: center;
+}
+.newLetter h3{
+	margin: 70px 0;
+	font-weight: 600;
+	text-align: 50%;
+}
+.newLetter input{
+	width:50%;
+	background: #cfcccc;
+	outline: none;
+	margin-bottom: 30px;
+	text-align: center;
+	border: 1px solid black;
+	
+	border-bottom: 3px solid #434040;
+	border-radius: 9px;
+	padding: 7px 0;
+	color: black!important;
+	font-style: italic;
+	/* margin-left: 120px; */
+}
+::placeholder{
+	color: black!important;
+	font-size: 16px;
+}
+.newLetter button{
+	width: 180px;
+	background:linear-gradient(to top, #dcd8d8, #07a0ec );
+	border-radius: 7px;
+	padding: 5px;
+	font-weight: 700px;
+	
+	/* margin-left: 40px; */
+}
 
 
 /* -------------------------------------------------- footer */

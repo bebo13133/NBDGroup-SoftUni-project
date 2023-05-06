@@ -1,4 +1,5 @@
 
+// window.onload = 
 
 
 window.onload = function () {
@@ -18,7 +19,41 @@ window.onload = function () {
 
     }
 
-}
+};
+lazyFunction();
+function lazyFunction() {
+const imgElements = document.querySelectorAll("img[data-src]");
+
+const lazyLoadingImage = (entries, observer) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) return;
+    entry.target.src = entry.target.dataset.src;
+    entry.target.addEventListener("load", () => {
+      entry.target.classList.remove("lazy-img");
+      observer.unobserve(entry.target);
+    });
+    console.log("Called");
+  });
+};
+const lazyLoadingObserver = new IntersectionObserver(lazyLoadingImage, {
+  threshold: 0.9,
+});
+imgElements.forEach((img) => lazyLoadingObserver.observe(img));
+
+
+};
+
+
+
+
+
+
+
+
+
+
+
+
 var menuElements = document.querySelectorAll("ul li a");
 menuElements.forEach((elements) => {
     elements.addEventListener("click", () => {
@@ -38,8 +73,7 @@ function newFunction() {
         wrapText.classList.add("show");
 
     };
-    window.addEventListener("load", executedCode);
-
+ 
     setCookie = (userName, userValue, expDays) => {
         let date = new Date();
         date.setTime(date.getTime() + (expDays * 24 * 60 * 60 * 1000));
@@ -62,7 +96,8 @@ function newFunction() {
 
         setCookie("cookie", true, 15);
     });
-}
+    window.addEventListener("load", executedCode);
+};
 
 
 

@@ -269,59 +269,6 @@
 
 
 
-	/*---------------- drop-down---------------- */
-	/* .mobile-links{
-		display: none;
-		position:fixed;
-		top: 100px;
-		left:3px
-	}
-	.menu-box ul li a:hover {
-		text-shadow: -2px 2px 0 red;
-		transform: translateY(-6px);
-	}
-	#menuBox > ul > li.nav-links.dropdown > a{
-		display: block;
-		align-items: center;
-		justify-content: space-between;
-	}
-	.dropdown-item .nav-link{
-		margin: 0.5rem 0 ;
-		color: #f79533;
-		font-size: 18px;
-		transition: trnasform 0.1s;
-		background: transparent;
-		text-shadow: #000;
-		letter-spacing: 0.3px;
-	}
-
-	.dropdown_icon{
-		font-size: 16px;
-		transition: 0.5s;
-		margin-left: 25px;
-		transition: transform 1s;
-	}
-	.drop-menu{
-		margin: 2rem 0rem 0rem 0rem;
-		  display: none;  
-		 transition: 0.5s;
-		 scale: 2;
-		 
-		
-		opacity: 0;
-	}
-	#menuBox > ul > li.nav-links.dropdown > ul > li> a{
-		font-size: 22px;
-	}
-
-	.dropdown:hover > .drop-menu{
-		opacity: 1; 
-		
-		transform: rotate(360deg) scale(0.5) translateY(20px);
-		transition: transform 2s; 
-	
-	} */
-
 
 /* =============== slide============== */
 .carousel-item {
@@ -347,7 +294,11 @@ margin: 0 10px 50px 10px;
 
 }
 
-
+.slider{
+	display: block;
+	height: 180px;
+	width: 80%;
+}
 
 /* ========================================= */
 /* .img-header::before{
