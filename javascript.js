@@ -28,20 +28,19 @@ window.onload = function () {
 
 };
 
-const searchOpenBtn = selectorElement('#search-icon');
+var searchOpenBtn = selectorElement('#search-icon');
 
-const searchCloseBtn = selectorElement('#form-close-btn');
-const searchForm = selectorElement('#search-form-container');
+var searchCloseBtn = selectorElement('#form-close-btn');
+var searchForm = selectorElement('#search-form-container');
 
 searchOpenBtn.addEventListener('click', ()=>
        searchForm.classList.add('activated'));
 searchCloseBtn.addEventListener('click', ()=>  
        searchForm.classList.remove('activated'));
 
-
-
-var bodyElement= document.body;
-var themeToggleBtn = selectorElement('#theme-toggle-btn');
+ window.onload=function searching(){
+const bodyElement= document.body;
+const themeToggleBtn = selectorElement('#theme-toggle-btn');
 const currentTheme = localStorage.getItem('currentTheme')
 
 if(currentTheme) {
@@ -56,12 +55,12 @@ themeToggleBtn.addEventListener("click", ()=>{
 
  
     }else{
-        localStorage.removeItem('currentTheme')
+         localStorage.removeItem('currentTheme')
        
     }
   
 });
-
+};
 
 
 
