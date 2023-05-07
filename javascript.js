@@ -1,7 +1,14 @@
 
 // window.onload = 
 
-
+var selectorElement = selector =>{
+    var element= document.querySelector(selector)
+    if(element) return element;
+    throw new Error(`Wrong ${selector}. Choiss another`); 
+};
+window.addEventListener('keyup', event =>{
+    if(event.key==="Escape") searchForm.classList.remove('activated')
+})
 window.onload = function () {
     let menuBox = document.getElementById('menuBox')
     let icon = document.getElementById("menuIcon")
@@ -20,6 +27,46 @@ window.onload = function () {
     }
 
 };
+
+const searchOpenBtn = selectorElement('#search-icon');
+
+const searchCloseBtn = selectorElement('#form-close-btn');
+const searchForm = selectorElement('#search-form-container');
+
+searchOpenBtn.addEventListener('click', ()=>
+       searchForm.classList.add('activated'));
+searchCloseBtn.addEventListener('click', ()=>  
+       searchForm.classList.remove('activated'));
+
+
+
+var bodyElement= document.body;
+var themeToggleBtn = selectorElement('#theme-toggle-btn');
+const currentTheme = localStorage.getItem('currentTheme')
+
+if(currentTheme) {
+    bodyElement.classList.add('light-theme')
+
+};
+themeToggleBtn.addEventListener("click", ()=>{
+    bodyElement.classList.toggle('light-theme')
+ 
+    if(bodyElement.classList.contains('light-theme')){
+   localStorage.setItem('currentTheme','themeActive')
+
+ 
+    }else{
+        localStorage.removeItem('currentTheme')
+       
+    }
+  
+});
+
+
+
+
+
+
 lazyFunction();
 function lazyFunction() {
 const imgElements = document.querySelectorAll("img[data-src]");
@@ -91,7 +138,9 @@ function newFunction() {
         });
         return value;
     };
-    document.querySelector("#cookies_btn").addEventListener('click', () => {
+    let cookieElementor = document.querySelector("#cookies_btn")
+    if(cookieElementor)
+    cookieElementor.addEventListener('click', () => {
         wrapText.classList.remove("show");
 
         setCookie("cookie", true, 15);

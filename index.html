@@ -15,10 +15,13 @@
 
 
     <title>Welcome in NBDA group</title>
- 
-
-
-
+    <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.2.0/remixicon.css"
+        integrity="sha512-eRbcr5kt0vg2Kgl5BBKIqXoZ0f1lpe4ImM8GyzJN7mrhUR57xPh2JX+5Ra8zlh5QZWxEVQW9MOfMaCEEjnMcMA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.2.0/remixicon.min.css"
+        integrity="sha512-GnKwJshx9tNlW9S66QP0468D9rP87ncTdWOjWGibDaTR7XuN0x6Wq5HDAG0hNYf8QtW+keURtN6jqnUWskV7bA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"> -->
     <link rel=" stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'" />
@@ -46,10 +49,11 @@
     <header>
         <!-- <script type="text/javascript" src="javascript.js" async defer></script> -->
         <section class="navigation">
-            <p id="logo">NBDA<span><i class="fa-solid fa-fire-flame-curved" style="color: #c81933;"></i>Group</span></p>
+
 
             <nav id="navbar" class="scrolled">
-
+                <p id="logo">NBDA<span><i class="fa-solid fa-fire-flame-curved" style="color: #c81933;"></i>Group</span>
+                </p>
                 <div class="menu-bar">
                     <ul>
                         <li><a class="active" href="#">Home</a></li>
@@ -66,11 +70,27 @@
                             </div>
 
                         </li>
-                        <li>
+
                         <li><a href="#">News</a></li>
+
                     </ul>
 
 
+                </div>
+                <div class="list list-rigth">
+                    <button class="btn place-items-center" id="theme-toggle-btn">
+                        <i class="ri-sun-line sun-icon"></i>
+                        <i class="ri-moon-line moon-icon"></i>
+                    </button>
+
+                    <button class="btn place-items-center" id="search-icon">
+                        <i class="ri-search-line"></i>
+                    </button>
+                    <!-- <button class="btn place-items-center screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
+                    
+                        <i class="fa-solid fa-sun" style="color: #ffffff;"></i>
+                        <i class="fa-regular fa-moon" style="color: #ffffff;"></i>
+                    </button> -->
                 </div>
 
 
@@ -79,10 +99,11 @@
         </section>
         <section class="img-header">
             <svg xmlns="http://www.w3.org/2000/svg" class="waves" viewBox="0 0 1440 320">
-                <path fill=" #252830" fill-opacity="1"
+                <path fill="#131417" fill-opacity="1"
                     d="M0,192L34.3,208C68.6,224,137,256,206,256C274.3,256,343,224,411,197.3C480,171,549,149,617,154.7C685.7,160,754,192,823,218.7C891.4,245,960,267,1029,256C1097.1,245,1166,203,1234,181.3C1302.9,160,1371,160,1406,160L1440,160L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
                 </path>
             </svg>
+          
             <!--==================== MOBILE-MENU ========================-->
 
             <link rel="stylesheet" media="screen and (max-width: 768px)" href="style-mobile.css" />
@@ -132,60 +153,84 @@
         </section>
 
     </header>
+   <div class="search-form-container container" id="search-form-container">
+    <div class="form-container-inner">
+        <form action="" class="form">
+            <input type="text" class="form-input" placeholder="What are you looking for...">
+            <button class="btn form-btn" type="submit">
+                <i class="ri-search-line"></i>
 
+            </button>
+        </form>
+        <span class="form-note"> Or press ESC to close</span>
+    </div>
+    <button class="btn form-close-btn place-items-center" id="form-close-btn">
+        <i class="ri-close-line"></i>
+    </button>
+   </div>
+        
+   
     <!-- =============================================  blog-news-slide==============transform: ======================================= -->
     <section class="wraper-slide">
         <div class="slider">
             <h3>Partners and customers</h3>
-          <div class="slide-track">
-          
+            <div class="slide-track">
+
                 <!-- CODE IMG -->
-            <div class="slide" >
-                <a href="https://dabags.eu/" target="_blank" alt="dabags"> <img src="/media/company/Dry-Aging-Bags-Black.jpg.webp" alt="dabags" loading="lazy"/></a>
-               
+                <div class="slide">
+                    <a href="https://dabags.eu/" target="_blank" alt="dabags"> <img
+                            src="/media/company/Dry-Aging-Bags-Black.jpg.webp" alt="dabags" loading="lazy" /></a>
+
+                </div>
+                <div class="slide">
+                    <a href="https://softuni.bg/" target="_blank" alt="dabags"><img src="/media/company/softuni-1.png"
+                            alt="softuni" loading="lazy" /></a>
+
+                </div>
+                <div class="slide ambitioned-img">
+                    <a href="https://ambitioned.com/" target="_blank" alt="dabags"><img
+                            src="/media/company/top-logo-final-white-1.png" alt="ambitioned" loading="lazy" /></a>
+
+                </div>
+                <div class="slide">
+                    <a href="https://turkishsweets.bg/" target="_blank" alt="turkishsweets"><img
+                            src="/media/company/turkishsweets.jpg" alt="turkishsweets" loading="lazy" /></a>
+
+                </div>
+
+                <div class="slide">
+                    <a href="http://csmega-bg.com/en/"> <img src="/media/company/csmega-bg.webp" alt="csmega" /></a>
+
+                </div>
+                <div class="slide">
+                    <a href="https://dabags.eu/" target="_blank" alt="dabags"> <img
+                            src="/media/company/Dry-Aging-Bags-Black.jpg.webp" alt="dabags" loading="lazy" /></a>
+
+                </div>
+                <div class="slide">
+                    <a href="https://softuni.bg/" target="_blank" alt="dabags"><img src="/media/company/softuni-1.png"
+                            alt="softuni" loading="lazy" /></a>
+
+                </div>
+                <div class="slide ambitioned-img">
+                    <a href="https://ambitioned.com/" target="_blank" alt="dabags"><img
+                            src="/media/company/top-logo-final-white-1.png" alt="ambitioned" loading="lazy" /></a>
+
+                </div>
+                <div class="slide">
+                    <a href="https://turkishsweets.bg/" target="_blank" alt="turkishsweets"><img
+                            src="/media/company/turkishsweets.jpg" alt="turkishsweets" loading="lazy" /></a>
+
+                </div>
+
+                <div class="slide">
+                    <a href="http://csmega-bg.com/en/"> <img src="/media/company/csmega-bg.webp" alt="csmega" /></a>
+
+                </div>
+
+
+
             </div>
-            <div class="slide">
-                <a href="https://softuni.bg/" target="_blank" alt="dabags"><img src="/media/company/softuni-1.png" alt="softuni" loading="lazy"/></a>
-                
-            </div>
-            <div class="slide ambitioned-img">
-                <a href="https://ambitioned.com/"target="_blank" alt="dabags"><img src="/media/company/top-logo-final-white-1.png" alt="ambitioned" loading="lazy"/></a>
-                
-            </div>
-            <div class="slide">
-                <a href="https://turkishsweets.bg/" target="_blank" alt="turkishsweets" ><img src="/media/company/turkishsweets.jpg" alt="turkishsweets" loading="lazy"/></a>
-                 
-              </div>
-            
-            <div class="slide">
-                <a href="http://csmega-bg.com/en/">  <img src="/media/company/csmega-bg.webp" alt="csmega"/></a>
-              
-            </div>
-            <div class="slide">
-                <a href="https://dabags.eu/" target="_blank" alt="dabags"> <img src="/media/company/Dry-Aging-Bags-Black.jpg.webp" alt="dabags" loading="lazy"/></a>
-               
-            </div>
-            <div class="slide">
-                <a href="https://softuni.bg/" target="_blank" alt="dabags"><img src="/media/company/softuni-1.png" alt="softuni" loading="lazy"/></a>
-                
-            </div>
-            <div class="slide ambitioned-img">
-                <a href="https://ambitioned.com/"target="_blank" alt="dabags"><img src="/media/company/top-logo-final-white-1.png" alt="ambitioned" loading="lazy"/></a>
-                
-            </div>
-            <div class="slide">
-                <a href="https://turkishsweets.bg/" target="_blank" alt="turkishsweets" ><img src="/media/company/turkishsweets.jpg" alt="turkishsweets" loading="lazy"/></a>
-                 
-              </div>
-            
-            <div class="slide">
-                <a href="http://csmega-bg.com/en/">  <img src="/media/company/csmega-bg.webp" alt="csmega"/></a>
-              
-            </div>
-           
-           
-        
-          </div>
         </div>
     </section>
 
@@ -209,7 +254,7 @@
 
                 <div class="service-block-1">
                     <img class="lazi-img" src="/media/webdesigns.webp" data-src="/media/webdesigns.webp"
-                        decoding="async"  alt="web_services">
+                        decoding="async" alt="web_services">
                 </div>
                 <div id="service-col" class="service-col">
 
@@ -228,7 +273,7 @@
             <div class="row-service-1">
 
                 <div class="service-block-1">
-                    <img class="lazi-img" src="/media/loading.webp" data-src="/media/loading.webp" alt="software-dev" >
+                    <img class="lazi-img" src="/media/loading.webp" data-src="/media/loading.webp" alt="software-dev">
                 </div>
                 <div id="service-col" class="service-col" style="filter: drop-shadow(12px 20px 10px rgb(253, 50, 50));">
 
@@ -266,7 +311,8 @@
             <div class="row-service-1">
 
                 <div class="service-block-1">
-                    <img class="lazi-img" src="/media/appservices.webp" data-src="/media/appservices.webp" alt="app_services" >
+                    <img class="lazi-img" src="/media/appservices.webp" data-src="/media/appservices.webp"
+                        alt="app_services">
                 </div>
                 <div id="service-col" class="service-col" style="filter: drop-shadow(12px 20px 10px rgb(5, 109, 237));">
 
@@ -319,8 +365,7 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img  src="/media/asya_small.webp" data-src="/media/asya.webp"
-                            alt="Asya">
+                        <img src="/media/asya_small.webp" data-src="/media/asya.webp" alt="Asya">
                         <div class="carousel-caption">
                             <h5>Asya Georgiva</h5>
                             <small>App & Web solution</small>
@@ -363,7 +408,7 @@
 
 
 
-    
+
 
 
     <!-- ==================NEWS===================== -->
