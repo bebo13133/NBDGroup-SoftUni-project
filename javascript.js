@@ -1,14 +1,18 @@
 
 // window.onload = 
 
-var selectorElement = selector =>{
-    var element= document.querySelector(selector)
-    if(element) return element;
-    throw new Error(`Wrong ${selector}. Choiss another`); 
-};
-window.addEventListener('keyup', event =>{
-    if(event.key==="Escape") searchForm.classList.remove('activated')
-})
+// var selectorElement = selector =>{
+//     var element= document.querySelector(selector)
+//     if(element) return element;
+//     throw new Error(`Wrong ${selector}. Choiss another`); 
+// };
+// var escFunction = window.addEventListener('keyup', event =>{
+//     if(event.key==="Escape") searchForm.classList.remove('activated')
+    
+// });
+
+
+
 window.onload = function () {
     let menuBox = document.getElementById('menuBox')
     let icon = document.getElementById("menuIcon")
@@ -27,6 +31,7 @@ window.onload = function () {
     }
 
 };
+
 
 var searchOpenBtn = selectorElement('#search-icon');
 

@@ -354,7 +354,7 @@ width: 8rem;
 	height: 700px;
 	padding: 0;
 	position: relative;
-	filter:drop-shadow(12px 0px 0px rgb(251, 142, 0));
+	filter:drop-shadow(-1px 0px -1px rgb(251, 142, 0));
 	z-index: -1;
 }
 .img-header .waves{
