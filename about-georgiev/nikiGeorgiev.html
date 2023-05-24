@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Nikolay Georgiev|Javascript student in SoftUni-Bulgaria|</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://kit.fontawesome.com/e0e357c83e.js" crossorigin="anonymous"></script>
+    <!-- <script type="text/javascript" src="app.js"></script> -->
+</head>
+<div id="preloader"></div>
+<body>
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+            
+                <img src="" alt="logo" class="logo" id="logo-dark">
+             
+               <ul id="burgerMenu">
+                    <li><i id="color-mode" class="fa-solid fa-sun" style="color: #ffffff;"></i></li>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    
+                    <i class="fa-regular fa-circle-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+              <img src="/about-borislav/images/sun-8728.png" alt="lightMode" id="sunIcon">
+           
+            </nav>
+            <div class="info-person">
+                <p>Javascript Student </p>
+                <!-- in <span>SoftUni-Bulgaria</span> -->
+                <h1>Hi,<br> I'm <span>Niki</span></h1>
+            </div>
+        </div>
+
+    </div>
+<!-- ================================================== -->
+    <div class="about-person">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-1-about">
+                    <img src="./images/47087200.jpg">
+                </div>
+                <div id="about" class="col-2-about">
+                    <h1>About Niki</h1>
+                    <p> Lorem ipsum, dolor sit amet consectetur a
+                        alias labore, ratione similique modi?</p>
+
+                    <div class="educations-tab">
+                        <p class="links active-links" onclick="openTab('skills')">Skills</p>
+                        <p class="links" onclick="openTab('experience')">Experience</p>
+                        <p class="links" onclick="openTab('education')">Education</p>
+                        <!-- <p class="links" onclick="openTab('certificates')">Certificates</p> -->
+
+                    </div>
+                    <div class="education-content active" id="skills">
+                        <ul>
+                            <li><span>UI/UX<br></span>Детегледачка</li>
+                            <li><span>SEO<br></span>SEO Services and Optimization</li>
+                            <li><span>Social-networks<br></span>Designing and building websites</li>
+                            <li><span>App Development<br></span>Building simple App's with <span> JS</span></li>
+
+                        </ul>
+
+                    </div>
+                    <div class="education-content" id="experience">
+                        <ul>
+                            <li><span>UI/UX<br></span>Designing Web</li>
+                            <li><span>SEO<br></span>SEO Services and Optimization</li>
+                            <li><span>Social-networks<br></span>Designing and building websites</li>
+                            <li><span>App Development<br></span>Building simple App's with <span> JS</span></li>
+
+                        </ul>
+
+                    </div>
+                    <div class="education-content" id="education">
+                        <ul>
+                            <li><span>UI/UX<br></span>Designing Web</li>
+                            <li><span>SEO<br></span>SEO Services and Optimization</li>
+                            <li><span>Social-networks<br></span>Designing and building websites</li>
+                            <li><span>App Development<br></span>Building simple App's with <span> JS</span></li>
+
+                        </ul>
+
+                    </div>
+                    <div class="education-content" id="certificates">
+                        <ul>
+                            <li><span>/UX<br></span>Designing Web</li>
+                            <li><span>SEO<br></span>SEO Services and Optimization</li>
+                            <li><span>Social-networks<br></span>Designing and building websites</li>
+                            <li><span>App Development<br></span>Building simple App's with <span> JS</span></li>
+
+                        </ul>
+
+                    </div>
+
+                    <script type="text/javascript" src="app.js"></script>
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="tittle">My Services</h1>
+            <div class="services-list">
+
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, repellendus?
+                    </p>
+                    <a href="Learn more">Learn more..</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-square-js" style="color: #e2ff05;"></i>
+                    <h2>Building App's</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, error.</p>
+                    <a href="Learn more">Learn more..</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Designing</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, dolorem?</p>
+                    <a href="Learn more">Learn more..</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-magnifying-glass-chart" style="color: #06388e;"></i>
+                    <h2>SEO Optimization</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, dolorem?</p>
+                    <a href="Learn more">Learn more..</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- -------------------portfolioo------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="tittle">My Works</h1>
+            <div class="workList">
+                <div class="work">
+                    <img src="./images/341269248_1411278586080186_7505280952848484816_n.jpg" alt="Turkishsweets.bg">
+                    <div class="layer-line">
+                        <h3>Online shopping store</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, nam?</p>
+                        <a href="https://turkishsweets.bg/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"
+                                style="color: #eb0a0a;"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/341819985_964110264951192_4000082748826480629_n.jpg" alt="Dabags.eu">
+                    <div class="layer-line">
+                        <h3>Online shopping store</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, nam?</p>
+                        <a href="https://dabags.eu/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"
+                                style="color: #eb0a0a;"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/341273793_2818866641583247_7479538787223241076_n.jpg" alt="NBDGroup-SoftUni">
+                    <div class="layer-line">
+                        <h3>Web design and services</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, nam?</p>
+                        <a href="https://bebodesigns.eu/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"
+                                style="color: #eb0a0a;"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#" class="btn">See more...</a>
+
+        </div>
+
+
+
+    </div>
+    <!-- ---------- contact---------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="left-side">
+                    <h1 class="tittle">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope" style="color: #0047c2;"></i><a href="mailto:niki.georgiev@bebodesigns.eu">niki.georgiev@bebodesigns.eu</a></p>
+                    <p><i class="fa-solid fa-phone-volume" style="color: #2f23d7;"></i> <a href=""></a></p>
+                    <div class="social-icons">
+                        <a href="" target="_blank"><i class="fa-brands fa-facebook"
+                                style="color: #4488fd;"></i></a>
+                        <a href="https://github.com/NGNikolay" target="_blank"><i class="fa-brands fa-github"
+                                style="color: #b20a0a;"></i></a>
+                        <a href="" target="_blank"><i class="fa-brands fa-linkedin"
+                                style="color: #4f89ee;"></i></a>
+
+                    </div>
+                    <a href="#" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="right-side">
+                    <form action="./mail.php" method="post"> 
+                            
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="Messages" rows="6" placeholder="Write your Messages here.."></textarea>
+                        <button type="submit" class="btn btn2">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>All rights reserved! &copy; <a href="https://bebodesigns.eu/" target="_blank">BeboDesigns.eu</a> & NBD<span><i class="fa-solid fa-fire-flame-curved" style="color: #c81933;"></i>Group</span> 2023</p>
+        </div>
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+
+</body>
+
+</html>
